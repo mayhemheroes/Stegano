@@ -4,9 +4,6 @@ target: fuzz-stegano
 testsuite:
     - file://mayhem/testsuite
 
-image: ghcr.io/matl4c/fuzz-stegano:latest
-
 cmds:
   - cmd: /src/mayhem/fuzz-stegano.py
     libfuzzer: true
-    timeout: 8
