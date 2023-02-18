@@ -1,0 +1,9 @@
+project: stegano
+target: fuzz-stegano
+
+testsuite:
+    - file://mayhem/testsuite
+
+cmds:
+  - cmd: /src/mayhem/fuzz-stegano.py
+    libfuzzer: true
